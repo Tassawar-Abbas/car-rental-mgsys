@@ -15,10 +15,10 @@ const Header = () => {
                 <div className='w-5 h-0.5 bg-black'></div>
                 <div className='w-5 h-0.5 bg-black'></div>
             </div>
-            <div className={`flex ${showMenu?"flex-col absolute top-16 w-full":"hidden md:flex"} gap-5  md:flex-row md:static md:w-auto bg-white text-center`}>
+            <div className={`${showMenu?"flex flex-col absolute top-16 w-full":"hidden md:flex"} gap-5  md:flex-row md:static md:w-auto bg-white text-center`}>
                 {headerLinks.map((hLink) => (
                     <div key={hLink.link}>
-                        <Link href={hLink.link} exact={hLink.exact}
+                        <Link href={hLink.link} exact={`${hLink.exact}`}
                             className={`${pathname == hLink.link ? 'text-third-color' : 'text-gray-500'}`}>
                             <span>{hLink.text}</span>
                         </Link>
