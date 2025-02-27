@@ -1,5 +1,5 @@
 'use client'
-import { carouselData } from '@/app/constants/data'
+import { carouselData } from '@/constants/data'
 import { Button } from '@/components/ui/button'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 import Autoplay from 'embla-carousel-autoplay'

@@ -1,6 +1,6 @@
 import React from 'react'
 import { TitleText } from './TitleText'
-import { objectiveData } from '@/app/constants/data'
+import { objectiveData } from '@/constants/data'
 
 export const Objective = () => {
     return (
