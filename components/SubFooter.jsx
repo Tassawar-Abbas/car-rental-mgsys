@@ -30,7 +30,7 @@ export const SubFooter = () => {
                     </span>
                     <div className='flex flex-col gap-2'>
                         <h5 className='text-2xl text-gray-900 font-bold'>
-                            Wedding
+                            Our Fleet
                         </h5>
                         <p className='mb-4 text-base text-gray-500 border-l-4 border-third-color pl-4'>
                             Discover the perfect ride for an Event - What's your selction?
@@ -43,7 +43,7 @@ export const SubFooter = () => {
                     </span>
                     <div className='flex flex-col gap-2'>
                         <h5 className='text-2xl text-gray-900 font-bold'>
-                            Wedding
+                            About Us
                         </h5>
                         <p className='mb-4 text-base text-gray-500 border-l-4 border-third-color pl-4'>
                            Discover unmatched luxury travel with Amahh in Melboun's finest experience.
