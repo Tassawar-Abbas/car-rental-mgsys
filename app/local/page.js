@@ -4,8 +4,8 @@ import React from 'react'
 
 const Local = () => {
   return (
-    <div>
-      <Banner img='/images/n1.jpg' title='Local Transfer'
+    <div className='local-transfer'>
+      <Banner img='/images/n1.jpg' title='Local Transfer' color={'white'}
         text='Add to the memories on your big day with Amahh' />
       <div className='max-w-[1150px] mx-4 lg:mx-auto my-10'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>

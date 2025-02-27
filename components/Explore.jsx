@@ -1,7 +1,7 @@
-import { styleClasses } from '@/app/constants/style'
+import { styleClasses } from '@/constants/style'
 import React from 'react'
 import { TitleText } from './TitleText'
-import { exploreWorlds } from '@/app/constants/data'
+import { exploreWorlds } from '@/constants/data'
 import { ExploreWorld } from './ExploreWorld'
 
 export const Explore = () => {

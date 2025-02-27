@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { motion } from 'framer-motion'
-import { textVariant2 } from '@/app/constants/motion'
+import { textVariant2 } from '@/constants/motion'
 export const TitleText = ({ title, textStyles }) => {
     return (
         <motion.h4 variants={textVariant2} initial='hidden' whileInView='show'

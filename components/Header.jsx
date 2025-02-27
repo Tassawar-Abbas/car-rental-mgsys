@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import { headerLinks } from '../app/constants/data'
+import { headerLinks } from '../constants/data'
 import { usePathname } from 'next/navigation'
 
 const Header = () => {
