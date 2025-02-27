@@ -34,19 +34,19 @@ export const headerLinks=[
 export const carouselData=[
     {
         title:'Profile',
-        img:'/images/c1.jpg',
+        img:'/images/n1.jpg',
         text:'Select your favored vehicle, timetable and objective effortlessely',
         icon:'paint-brush'
     },
     {
         title:'Quotes',
-        img:'/images/c5.jpg',
+        img:'/images/n2.jpg',
         text:'Your definitive decision for lavish or high limit transport whenever at any place',
         icon:'quote-left'
     },
     {
         title:'Inspiration',
-        img:'/images/c4.jpg',
+        img:'/images/n3.jpg',
         text:'Find our spic and span limolux administration, conveying unmatched class and accomodation',
         icon:'paint-brush'
     },
