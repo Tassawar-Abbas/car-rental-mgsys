@@ -142,3 +142,26 @@ export const servicesData=[
 
     },
 ]
+
+export const insightList=[
+    {
+        imgUrl:'/images/m1.jpg',
+        title:'Audii',
+        subTitle:'Experience the encapsulation of luxury with Amahh astonishing decision of premium vehicle.',
+    },
+    {
+        imgUrl:'/images/s1.jpg',
+        title:'Porsche',
+        subTitle:'Amahh present a handpicked determination of the best extravagance vehicle for the individual.',
+    },
+    {
+        imgUrl:'/images/n2.jpg',
+        title:'Lamborgini',
+        subTitle:'Amahh offer an answer for those looking for both more than adequate baggage limit and positive extravagance.',
+    },
+    {
+        imgUrl:'/images/n1.jpg',
+        title:'Fortuner',
+        subTitle:'Find the fortuner, a top decision for obliging 5-6 travelers easily with more than adequate baggage.',
+    },
+]
