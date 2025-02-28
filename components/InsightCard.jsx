@@ -14,7 +14,7 @@ const InsightCard = ({ insight, index }) => {
                         {insight?.title}
                     </h4>
                 </div>
-                <p className='mt-4 font-normal lg:text-lg text-sm'>{insight?.subTitle}</p>
+                <p className='mt-4 font-normal lg:text-lg text-sm w-[80%]'>{insight?.subTitle}</p>
             </div>
         </motion.div>
     )

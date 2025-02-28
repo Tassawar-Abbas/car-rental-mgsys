@@ -155,7 +155,7 @@ export const insightList=[
         subTitle:'Amahh present a handpicked determination of the best extravagance vehicle for the individual.',
     },
     {
-        imgUrl:'/images/n2.jpg',
+        imgUrl:'/images/c3.jpg',
         title:'Lamborgini',
         subTitle:'Amahh offer an answer for those looking for both more than adequate baggage limit and positive extravagance.',
     },
