@@ -157,7 +157,7 @@ export const insightList=[
     {
         imgUrl:'/images/n2.jpg',
         title:'Ferrari',
-        subTitle:'Amahh offer an answer for those looking for both more than adequate baggage limit and positive extravagance.',
+        subTitle:'Amahh offer an answer for those looking for both more than adequate baggage limit and positive',
     },
     {
         imgUrl:'/images/n1.jpg',
