@@ -27,7 +27,7 @@ export const headerLinks=[
         exact:true
     },
     {
-        link:'/about',
+        link:'/about-us',
         text:'About Us',
         exact:true
     },
