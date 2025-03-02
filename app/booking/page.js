@@ -1,0 +1,56 @@
+import { bookingSteps } from '@/constants/data'
+import Link from 'next/link'
+import React from 'react'
+
+const Booking = ({ searchParams }) => {
+    const current = parseInt(searchParams?.index) || 1
+
+    return (
+        <div className='pt-5'>
+            <div className='hidden lg:flex justify-center items-center mt-5 ml-20'>
+                <div className='grid grid-cols-4 gap-5 mt-5 items-center w-[75%]'>
+                    {bookingSteps.map((item, index) => (
+                        <div key={index}>
+                            <div className='flex items-center gap-5'>
+                                <svg width="50" height="50" viewBox="0 0 100 100">
+                                    <circle
+                                        cx="50"
+                                        cy="50"
+                                        r="30"
+                                        fill={current >= index + 1 ? '#26d4e0' : 'black'}
+                                    />
+                                    <path
+                                        d="M35 50 L47 62 L65 35"
+                                        fill="none"
+                                        stroke={current >= index + 1 ? 'white' : '#26d4e0'}
+                                        strokeWidth="4"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                    />
+                                </svg>
+                                {index !== 3 && (
+                                    <div className={`w-full h-0.5 ${current > index + 1 ? "bg-third-color" : "bg-black"} rounded`}></div>
+                                )}
+
+                            </div>
+                            <p className='w-full font-roboto font-semibold text-sm uppercase my-2 text-slate-400'>
+                                Step {index + 1}
+                            </p>
+                            <p className='w-full font-roboto font-semibold text-sm uppercase text-slate-400'>
+                                {item.name}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            <div className={`${current == 4 ? "hidden" : "flex"} justify-between items-center mx-10 py-3`}>
+                <button className='bg-sky-950 text-white px-10 py-3 rounded-full'>Back</button>
+                <Link href={`/booking?index=${current+1}`} className='bg-third-color text-white px-10 py-3 rounded-full'>
+                Next
+                </Link>
+            </div>
+        </div>
+    )
+}
+
+export default Booking
