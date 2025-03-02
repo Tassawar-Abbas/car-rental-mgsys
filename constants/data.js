@@ -7,7 +7,7 @@ export const headerLinks=[
         exact:true
     },
     {
-        link:'/bookinng',
+        link:'/booking',
         text:'Tranfer',
         exact:true
     },
@@ -163,5 +163,20 @@ export const insightList=[
         imgUrl:'/images/n1.jpg',
         title:'Fortuner',
         subTitle:'Find the fortuner, a top decision for obliging 5-6 travelers easily with more than adequate baggage.',
+    },
+]
+
+export const bookingSteps=[
+    {
+        name:'Enter Ride Details'
+    },
+    {
+        name:'Choose a Vehicle'
+    },
+    {
+        name:'Enter Contact Details'
+    },
+    {
+        name:'Booking Summary'
     },
 ]
