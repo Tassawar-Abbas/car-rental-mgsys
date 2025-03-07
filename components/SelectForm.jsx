@@ -10,7 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 
 const SelectForm = ({ control, id, label, placeholder, list }) => {
     return (
-        <div>
+        <div className='mb-2'>
             <Label htmlFor={id} className='font-semibold text-md'>{label}</Label>
             <FormField
                 control={control}

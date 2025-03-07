@@ -4,10 +4,15 @@ import { bookingSteps } from '@/constants/data'
 import Link from 'next/link'
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import { useSearchParams } from 'next/navigation' // ✅ Import this hook
+import Insights from '@/components/Insights'
+import Contact from '@/components/Contact'
 
-const Booking = ({ searchParams }) => {
-    const current = parseInt(searchParams?.index) || 1
+const Booking = () => {
+    const searchParams = useSearchParams(); // ✅ Use this hook
+    const current = Number(searchParams.get('index')) || 1; // Unwrap the search params correctly
     const form = useForm();
+
     return (
         <div className='pt-5'>
             <div className='hidden lg:flex justify-center items-center mt-5 ml-20'>
@@ -34,7 +39,6 @@ const Booking = ({ searchParams }) => {
                                 {index !== 3 && (
                                     <div className={`w-full h-0.5 ${current > index + 1 ? "bg-third-color" : "bg-black"} rounded`}></div>
                                 )}
-
                             </div>
                             <p className='w-full font-roboto font-semibold text-sm uppercase my-2 text-slate-400'>
                                 Step {index + 1}
@@ -46,9 +50,11 @@ const Booking = ({ searchParams }) => {
                     ))}
                 </div>
             </div>
-            {current == 1 &&
-                <StepOne form={form} />
-            }
+
+            {current == 1 && <StepOne form={form} />}
+            {current == 2 && <Insights isForm={true} form={form} />}
+            {current == 3 && <Contact  form={form} />}
+
             <div className={`${current == 4 ? "hidden" : "flex"} justify-between items-center mx-10 py-3`}>
                 <button className='bg-sky-950 text-white px-10 py-3 rounded-full'>Back</button>
                 <Link href={`/booking?index=${current + 1}`} className='bg-third-color text-white px-10 py-3 rounded-full'>

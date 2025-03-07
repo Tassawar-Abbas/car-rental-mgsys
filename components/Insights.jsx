@@ -7,7 +7,7 @@ import { TitleText } from './TitleText'
 import { insightList } from '@/constants/data'
 import InsightCard from './InsightCard'
 
-const Insights = ({ isForm }) => {
+const Insights = ({ isForm,form }) => {
     return (
         <motion.div variants={!isForm && staggerContainer} initial={!isForm && 'hidden'}
             whileInView={!isForm && 'show'} viewport={{ once: false, amount: 0.25 }}
@@ -17,7 +17,7 @@ const Insights = ({ isForm }) => {
             }
             <div className='mt-12 flex flex-col gap-9'>
                 {insightList.map((insight,ind)=>(
-                    <InsightCard key={ind} insight={insight} index={ind}/>
+                    <InsightCard key={ind} insight={insight} index={ind} form={form} isForm={isForm}/>
                 ))}
             </div>
         </motion.div>

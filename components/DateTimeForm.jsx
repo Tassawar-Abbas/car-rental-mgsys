@@ -19,7 +19,7 @@ import { Label } from './ui/label'
 
 const DateTimeForm = ({control,id,label}) => {
     return (
-        <div>
+        <div className='mb-2'>
             <Label htmlFor={id} className='font-semibold text-md'>{label}</Label>
             <FormField
                 control={control}
