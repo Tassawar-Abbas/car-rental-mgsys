@@ -7,6 +7,7 @@ import { useForm } from 'react-hook-form'
 import { useSearchParams } from 'next/navigation' // ✅ Import this hook
 import Insights from '@/components/Insights'
 import Contact from '@/components/Contact'
+import StepFour from '@/components/StepFour'
 
 const Booking = () => {
     const searchParams = useSearchParams(); // ✅ Use this hook
@@ -54,6 +55,7 @@ const Booking = () => {
             {current == 1 && <StepOne form={form} />}
             {current == 2 && <Insights isForm={true} form={form} />}
             {current == 3 && <Contact  form={form} />}
+            {current == 4 && <StepFour  form={form} />}
 
             <div className={`${current == 4 ? "hidden" : "flex"} justify-between items-center mx-10 py-3`}>
                 <button className='bg-sky-950 text-white px-10 py-3 rounded-full'>Back</button>
