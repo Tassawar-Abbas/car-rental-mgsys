@@ -1,22 +1,27 @@
 import React, { useMemo, useState } from 'react'
 import { Form } from './ui/form'
-import DateTimeForm from './DateTimeForm'
+// import DateTimeForm from './DateTimeForm'
 import SelectForm from './SelectForm'
 import { pickupTime } from '@/constants/data'
 import CitySelect from './CitySelect'
-import { Country, State, City } from 'country-state-city';
-import dynamic from 'next/dynamic'
+import { City } from 'country-state-city';
+import InputForm from './InputForm'
+
 
 const StepOne = ({ form }) => {
     const getCities = City.getCitiesOfState('PK', 'PB');
     const [getSource, setSource] = useState(null)
     const [getDestination, setDestination] = useState(null)
-    
+
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 gap-5 mx-10 md:mx-[10%] my-10'>
             <Form {...form}>
                 <form className='w-full bg-white p-5 shadow-md border gap-5'>
-                    <DateTimeForm control={form.control} id='pickUpDate' label='Pickup Date' />
+                    {/* <DateTimeForm control={form.control} id='pickUpDate' label='Pickup Date' /> */}
+                    <div className='w-full mb-6 md:mb-0 relative'>
+                        <InputForm control={form.control} id='pickUpDate' label='Pickup Date'
+                             type='date' />
+                    </div>
                     <SelectForm id='pickupTime' label='Pickup Time' placeholder='Set Pickup Time'
                         list={pickupTime} control={form.control} />
 
